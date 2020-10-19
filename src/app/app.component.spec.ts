@@ -2,19 +2,16 @@ import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { OAuthModule } from 'angular-oauth2-oidc';
-import { OAuthService } from 'angular-oauth2-oidc';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule, HttpClientTestingModule, OAuthModule.forRoot()
+        RouterTestingModule, HttpClientTestingModule
       ],
       declarations: [
         AppComponent
-      ],
-      providers:[OAuthService]
+      ]
     }).compileComponents();
   }));
 

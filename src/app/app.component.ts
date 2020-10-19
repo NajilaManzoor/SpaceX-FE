@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { OAuthService, AuthConfig, JwksValidationHandler, OAuthEvent } from 'angular-oauth2-oidc';
 import { WebappService } from './services/webapp.service';
 import { Router, NavigationEnd } from '@angular/router';
 
